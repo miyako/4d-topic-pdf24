@@ -66,4 +66,6 @@ $ini:=["[GENERAL]"; \
 var $file : 4D.File
 $file:=Folder(fk home folder).file("AppData/Local/PDF24/pdf24-job.ini")
 $file.setText($ini)
+
+return True
 ```
