@@ -52,7 +52,7 @@ If (Get current printer#"PDF24")
 	SET CURRENT PRINTER("PDF24")
 End if 
 
-If (Not(["default"; "high"; "email"].contains($profile)))
+If (Not(["default"; "high"; "email"].includes($profile)))
 	$profile:="default"
 End if 
 
