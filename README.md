@@ -44,7 +44,7 @@ End if
 ARRAY TEXT($printers; 0)
 PRINTERS LIST($printers)
 
-If (Find in array($printers; "PDF24")#-1)
+If (Find in array($printers; "PDF24")=-1)
 	return False
 End if 
 
