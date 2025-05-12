@@ -12,6 +12,18 @@
 
 <img src="https://github.com/user-attachments/assets/e4939ef6-e78d-487b-96b4-632dea2c10d2" width=400 height=auto />
 
+## 出力ファイルを指定する方法
+
+### PDF24 Creator 11の場合
+
+設定画面で以下の項目を入力します。値はレジストリキー`HKEY_CURRENT_USER\Software\PDF24`に保存されます。
+
+* 印刷後にドキュメントを自動保存する
+* 出力ディレクトリ
+* ファイル名
+
+<img src="https://github.com/user-attachments/assets/d1b5f57e-3d4c-41fd-8db0-f69aa7ceb507" width=500 height=auto />
+
 PDF24 Creator 11以降は`pdf24-job.ini`を利用した設定の上書きができなくなったようです。
 
 過去バージョン
