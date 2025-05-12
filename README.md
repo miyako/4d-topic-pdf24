@@ -3,31 +3,32 @@
 
 # 4d-topic-pdf24
 
-### ダイアログを抑制して出力ファイル名を制御するには
-
-[PDF24 Creator 11.25.1](https://tools.pdf24.org/ja/creator#download)をダウンロードして実行します。
+[PDF24 Creator 11.25.1](https://tools.pdf24.org/ja/creator#download)はフリーの仮想プリンタードライバーです。
 
 > [!WARNING]
 > 途中で警告が表示されますが，インストールには成功します。
 
 <img src="https://github.com/user-attachments/assets/e4939ef6-e78d-487b-96b4-632dea2c10d2" width=400 height=auto />
 
-設定画面で以下の項目を入力します。値はレジストリキー`HKEY_CURRENT_USER\Software\PDF24`に保存されます。
+## 自動保存オブションを使用する方法
+
+**PDF24 Creator**アプリを起動し，設定を開きます。
+
+<img src="https://github.com/user-attachments/assets/d1b5f57e-3d4c-41fd-8db0-f69aa7ceb507" width=500 height=auto />
+
+以下の項目を入力します。
 
 * 印刷後にドキュメントを自動保存する
 * 出力ディレクトリ
 * ファイル名
 
-<img src="https://github.com/user-attachments/assets/d1b5f57e-3d4c-41fd-8db0-f69aa7ceb507" width=500 height=auto />
-
 `$fileName`には`SET PRINT OPTION`と`Spooler document name option`で設定したジョブ名が代入されます。
 
-### 留意するべきこと
+> [!WARNING]
+> * 仮想プリンタードライバーによる印刷ファイル出力は非同期処理です。
+> * 同名のファイルが存在する場合は接尾辞`(1)`が追加されます。
 
-* 仮想プリンタードライバーによる印刷ファイル出力は非同期処理です。
-* 同名のファイルが存在する場合は接尾辞`(1)`が追加されます。
-
-## 例題
+下記の要領で印刷できます。
 
 ```4d
 SET CURRENT PRINTER("PDF24")
@@ -58,7 +59,6 @@ Until ($file.exists)
 
 OPEN URL($file.platformPath)
 ```
-
 
 ### 【参考】過去バージョンの場合
 
