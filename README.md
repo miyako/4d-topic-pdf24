@@ -3,7 +3,7 @@
 
 # 4d-topic-pdf24
 
-## セットアップ
+### ダイアログを抑制して出力ファイル名を制御するには
 
 [PDF24 Creator 11.25.1](https://tools.pdf24.org/ja/creator#download)をダウンロードして実行します。
 
@@ -11,10 +11,6 @@
 > 途中で警告が表示されますが，インストールには成功します。
 
 <img src="https://github.com/user-attachments/assets/e4939ef6-e78d-487b-96b4-632dea2c10d2" width=400 height=auto />
-
-## 出力ファイルを指定する方法
-
-### PDF24 Creator 11,10,9の場合
 
 設定画面で以下の項目を入力します。値はレジストリキー`HKEY_CURRENT_USER\Software\PDF24`に保存されます。
 
@@ -31,9 +27,11 @@
 * 仮想プリンタードライバーによる印刷ファイル出力は非同期処理です。
 * 同名のファイルが存在する場合は接尾辞`(1)`が追加されます。
 
-### PDF24 Creator ?の場合
+### 【参考】過去バージョンの場合
 
-[過去バージョン](https://creator.pdf24.org/listVersions.php)は非公式の一時ファイル`pdf24-job.ini`を上書きすることで設定を変更することができたようです。64-bit版では，一時ファイル`pdf24-job.ini`を作成しても無視されます。
+[過去バージョン](https://creator.pdf24.org/listVersions.php)は一時ファイル`pdf24-job.ini`を上書きして設定を変更するという裏技があったようです。
+
+64-bit版のPDF24 Creator 11,10,9で検証したところ，一時ファイル`pdf24-job.ini`を作成しても無視されました。
 
 ## 理論上の例題
 
