@@ -27,6 +27,39 @@
 * 仮想プリンタードライバーによる印刷ファイル出力は非同期処理です。
 * 同名のファイルが存在する場合は接尾辞`(1)`が追加されます。
 
+## 例題
+
+```4d
+SET CURRENT PRINTER("PDF24")
+
+/*
+	Automatically save documents after printed: YES
+	Output directory: C:\Users\miyako\$printerName
+	File name: $fileName
+*/
+
+$name:="請求書"
+var $file : 4D.File
+$file:=Folder(fk home folder).folder("PDF24").file($name+".pdf")
+If ($file.exists)
+	$file.delete()
+End if 
+
+SET PRINT OPTION(Paper option; "A5")
+SET PRINT OPTION(Spooler document name option; $name)
+
+OPEN PRINTING JOB
+$h:=Print form("test")
+CLOSE PRINTING JOB
+
+Repeat 
+	DELAY PROCESS(Current process; 6)
+Until ($file.exists)
+
+OPEN URL($file.platformPath)
+```
+
+
 ### 【参考】過去バージョンの場合
 
 [過去バージョン](https://creator.pdf24.org/listVersions.php)は一時ファイル`pdf24-job.ini`を上書きして設定を変更するという裏技があったようです。
