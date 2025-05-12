@@ -12,6 +12,8 @@
 
 <img src="https://github.com/user-attachments/assets/e4939ef6-e78d-487b-96b4-632dea2c10d2" width=400 height=auto />
 
+PDF24 Creator 11以降は`pdf24-job.ini`を利用した設定の上書きができなくなったようです。
+
 ## 例題
 
 ```4d
