@@ -53,7 +53,7 @@ If (PDF24($path; $profile))
 End if 
 ```
 
-### `PDF24`
+* `PDF24`
 
 ```4d
 #DECLARE($path : Text; $profile : Text) : Boolean
