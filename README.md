@@ -66,7 +66,7 @@ OPEN URL($file.platformPath)
 
 64-bit版のPDF24 Creator 11,10,9で検証したところ，一時ファイル`pdf24-job.ini`を作成しても無視されました。
 
-## 理論上の例題
+下記の要領で一時ファイル`pdf24-job.ini`を作成しても，前述した自動保存オプションが反映されます。
 
 ```4d
 $path:=System folder(Desktop)+"my document.pdf"
