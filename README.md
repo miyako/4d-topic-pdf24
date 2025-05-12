@@ -14,7 +14,7 @@
 
 ## 出力ファイルを指定する方法
 
-### PDF24 Creator 11,10の場合
+### PDF24 Creator 11,10,9の場合
 
 設定画面で以下の項目を入力します。値はレジストリキー`HKEY_CURRENT_USER\Software\PDF24`に保存されます。
 
@@ -33,7 +33,7 @@
 
 ### PDF24 Creator ?の場合
 
-[過去バージョン](https://creator.pdf24.org/listVersions.php)は非公式の一時ファイル`pdf24-job.ini`を上書きすることで設定を変更することができました。
+[過去バージョン](https://creator.pdf24.org/listVersions.php)は非公式の一時ファイル`pdf24-job.ini`を上書きすることで設定を変更することができたようです。現バージョンでは，一時ファイル`pdf24-job.ini`を作成しても無視されます。
 
 ## 例題
 
