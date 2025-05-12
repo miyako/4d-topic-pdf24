@@ -12,7 +12,7 @@
 
 ## 自動保存オブションを使用する方法
 
-**PDF24 Creator**アプリを起動し，設定を開きます。
+* **PDF24 Creator**アプリを起動し，設定を開きます。
 
 <img src="https://github.com/user-attachments/assets/d1b5f57e-3d4c-41fd-8db0-f69aa7ceb507" width=500 height=auto />
 
