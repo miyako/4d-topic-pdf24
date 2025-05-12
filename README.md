@@ -62,7 +62,7 @@ OPEN URL($file.platformPath)
 
 ### 【参考】過去バージョンの場合
 
-[過去バージョン](https://creator.pdf24.org/listVersions.php)は一時ファイル`pdf24-job.ini`を上書きして設定を変更するという裏技があったようです。
+[過去バージョン](https://creator.pdf24.org/listVersions.php)は一時ファイル`pdf24-job.ini`を上書きして設定を変更するという裏技があったようです。GPTなどAIは，当時の情報を案内する場合があります。
 
 64-bit版のPDF24 Creator 11,10,9で検証したところ，一時ファイル`pdf24-job.ini`を作成しても無視されました。
 
