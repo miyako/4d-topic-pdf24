@@ -24,6 +24,10 @@
 
 <img src="https://github.com/user-attachments/assets/d1b5f57e-3d4c-41fd-8db0-f69aa7ceb507" width=500 height=auto />
 
+`$fileName`には`SET PRINT OPTION`と`Spooler document name option`で設定したジョブ名が代入されます。
+
+### PDF24 Creator 10の場合
+
 PDF24 Creator 11以降は`pdf24-job.ini`を利用した設定の上書きができなくなったようです。
 
 過去バージョン
