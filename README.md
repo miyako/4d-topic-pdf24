@@ -28,13 +28,7 @@
 
 ### PDF24 Creator 10の場合
 
-PDF24 Creator 11以降は`pdf24-job.ini`を利用した設定の上書きができなくなったようです。
-
-過去バージョン
-
-https://creator.pdf24.org/listVersions.php
-
-`10.8.0`で検証
+[過去バージョン](https://creator.pdf24.org/listVersions.php)は非公式の一時ファイル`pdf24-job.ini`を上書きすることで設定を変更することができました。
 
 ## 例題
 
