@@ -35,7 +35,7 @@
 
 [過去バージョン](https://creator.pdf24.org/listVersions.php)は非公式の一時ファイル`pdf24-job.ini`を上書きすることで設定を変更することができたようです。現バージョンでは，一時ファイル`pdf24-job.ini`を作成しても無視されます。
 
-## 例題
+## 理論上の例題
 
 ```4d
 $path:=System folder(Desktop)+"my document.pdf"
