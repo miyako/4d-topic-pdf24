@@ -14,6 +14,10 @@
 
 PDF24 Creator 11以降は`pdf24-job.ini`を利用した設定の上書きができなくなったようです。
 
+過去バージョン
+
+https://creator.pdf24.org/changelog/de.html
+
 ## 例題
 
 ```4d
