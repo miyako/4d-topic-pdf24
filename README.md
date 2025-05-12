@@ -26,6 +26,11 @@
 
 `$fileName`には`SET PRINT OPTION`と`Spooler document name option`で設定したジョブ名が代入されます。
 
+### 留意するべきこと
+
+* 仮想プリンタードライバーによる印刷ファイル出力は非同期処理です。
+* 同名のファイルが存在する場合は接尾辞`(1)`が追加されます。
+
 ### PDF24 Creator 10の場合
 
 [過去バージョン](https://creator.pdf24.org/listVersions.php)は非公式の一時ファイル`pdf24-job.ini`を上書きすることで設定を変更することができました。
