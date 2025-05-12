@@ -33,7 +33,7 @@
 
 ### PDF24 Creator ?の場合
 
-[過去バージョン](https://creator.pdf24.org/listVersions.php)は非公式の一時ファイル`pdf24-job.ini`を上書きすることで設定を変更することができたようです。現バージョンでは，一時ファイル`pdf24-job.ini`を作成しても無視されます。
+[過去バージョン](https://creator.pdf24.org/listVersions.php)は非公式の一時ファイル`pdf24-job.ini`を上書きすることで設定を変更することができたようです。64-bit版では，一時ファイル`pdf24-job.ini`を作成しても無視されます。
 
 ## 理論上の例題
 
